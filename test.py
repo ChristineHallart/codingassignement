@@ -8,13 +8,14 @@ Created on Thu Nov 21 16:23:35 2019
 from database import Database
 import json
 
-with open('C:\\Users\\chris\\Downloads\\graph_build.json','r') as json_file:
+path='C:\\Users\\chris\\Downloads\\'
+with open(path+'graph_build.json','r') as json_file:
    build = json.load(json_file)
-with open('C:\\Users\\chris\\Downloads\\img_extract.json','r') as json_file:
+with open(path+'img_extract.json','r') as json_file:
    extract = json.load(json_file)
-with open('C:\\Users\\chris\\Downloads\\graph_edits.json','r') as json_file:
+with open(path+'graph_edits.json','r') as json_file:
    edits = json.load(json_file)
-with open('C:\\Users\\chris\\Downloads\\expected_status.json','r') as json_file:
+with open(path+'expected_status.json','r') as json_file:
    res = json.load(json_file)
 
 # Get status (this is only an example, test your code as you please as long as it works)
